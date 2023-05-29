@@ -23,8 +23,8 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
+  font-family: "League Spartan", "Arial", sans-serif;
+  font-size: 14px;
   line-height: 1.5;
   background-color: #fff;
   color: #222;
@@ -35,13 +35,17 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1400px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -50,4 +54,144 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+  padding-top: 76px;
+  background-color: #d6f8f8;
+}
+
+/* SITE-HEADER */
+.site-header {
+  background-image: url("../img/combined-shape.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.site-header-container {
+  width: 100%;
+  height: 156px;
+}
+
+
+/* MAIN */
+.jobs-list {
+  list-style: none;
+  margin: 0;
+  padding-left: 128px;
+  padding-right: 128px;
+}
+
+.jobs-item {
+  width: 1110px;
+  height: 152px;
+  margin: 0;
+  border-radius: 8px;
+  padding: 32px 40px;
+  background-color: #f2f2f2;
+}
+
+.jobs-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.jobs-item-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-info-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.account-photo {
+  display: flex;
+  width: 88px;
+  height: 88px;
+  margin-right: 24px;
+}
+
+.account-info {
+  margin-top: -8px;
+}
+
+.account-status {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.account-status-text {
+  margin-right: 16px;
+  font-weight: 700;
+  line-height: 15px;
+  color: #5ca5a5;
+}
+
+.account-statuses {
+  display: flex;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 14px;
+  color: #fff;
+  padding: 6px 8px 4px 8px;
+  border-radius: 10px;
+}
+
+.account-statuses:not(:last-child) {
+  margin-right: 8px;
+}
+
+.new {
+  background-color: #5ca5a5;
+}
+
+.featured {
+  background-color: #2b3939;
+}
+
+.account-name {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #2b3939;
+}
+
+.job-time-mini-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin-left: -40px;
+}
+
+.job-time-item {
+  margin-left: 0;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500px;
+}
+
+.job-time-item:not(:last-child) {
+  margin-right: 34px;
+}
+
+.job-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job-info-items {
+  padding: 4px 8px;
+  color: #5ca5a5;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 24px;
+  background-color: #d9e2e2;
+}
+
+.job-info-items:not(:last-child) {
+  margin-right: 16px;
 }
